@@ -118,6 +118,12 @@ services:
       /usr/bin/mc policy set public minio/user-payments;
       exit 0;
       "
+  duckdb:
+    build: ./duckdb
+    container_name: duckdb
+    volumes:
+      - ./duckdb:/duckdb
+
 volumes:
   postgres:
   minio:
