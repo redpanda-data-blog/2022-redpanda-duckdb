@@ -1,3 +1,4 @@
+install 'httpfs';
 load 'httpfs';
 
 set s3_endpoint='localhost:9000';
